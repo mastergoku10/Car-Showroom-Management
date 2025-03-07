@@ -1,0 +1,52 @@
+Project Map: Platforms and Coding Patterns Used
+Overview of the key platforms and coding patterns used in the Car Showroom Management System:
+
+1. Web Framework
+Platform: Flask (Python)
+Pattern: MVC (Model-View-Controller), Routing
+Description: Handles HTTP requests and routes data to the right templates.
+
+2. Database
+Platform: MySQL + PyMySQL
+Pattern: CRUD Operations (Create, Read, Update, Delete)
+Description: Stores and manages car details, sales, inventory, and employees.
+
+3. Frontend (UI)
+Platform: HTML, CSS, JavaScript
+Pattern: MVT (Model-View-Template)
+Description: User interface built with HTML and styled using CSS, dynamic elements via JavaScript.
+
+4. User Authentication
+Platform: Flask Sessions
+Pattern: Session Management
+Description: Manages login and user roles (admin, employee) via Flask’s session mechanism.
+
+5. Flash Messages
+Platform: Flask
+Pattern: User Feedback
+Description: Displays success or error messages to users after actions (e.g., creating users, adding cars).
+
+6. Form Handling
+Platform: HTML Forms + Flask
+Pattern: POST/GET Requests
+Description: Collects and processes data from users (e.g., adding cars or sales).
+
+7. Dynamic Data (AJAX)
+Platform: Flask + JavaScript
+Pattern: AJAX
+Description: Loads car models, variants, etc., dynamically without reloading the page.
+
+8. Error Handling
+Platform: Flask
+Pattern: Error Handling
+Description: Manages errors like invalid logins or database issues.
+
+9. Security
+Platform: Flask + Werkzeug
+Pattern: Basic Security Practices
+Description: Manages session data securely, and passwords should be hashed for better security.
+
+10. Development and Deployment
+Platform: Flask Development Server, Production (WSGI server like Gunicorn)
+Pattern: Development & Production Setup
+Description: Development uses Flask's built-in server; production requires a more robust WSGI server.
